@@ -1,0 +1,9 @@
+7:13 PM 3/13/2017
+Pyramid-slide
+To do :
+A "slider" is actually just an <input> whose type attribute is equal to "range". See here for more details.
+The slider event that you care about is oninput. See here for more details.
+Remember that a dropdown menu is just a <select> element with some <option> elements nested inside.
+The select event that you care about is onchange.
+You will need to use the following style attributes: 
+margin, padding, color, background-color, border, border-radius, font-size, font-weight

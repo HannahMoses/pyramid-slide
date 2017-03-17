@@ -8,6 +8,8 @@ function slideFunction(value){
 
 function printPyramid() {
     var height = document.getElementById("height").value;
+        // this made height number value displayed below slider
+    document.getElementById("value").innerHTML = height;
     var count = 0
     var spaces = height - 1
     var hashes = 2
@@ -37,3 +39,4 @@ function printPyramid() {
     }
     document.getElementById("buildPyramid").innerHTML= pyram ;
     }
+printPyramid();

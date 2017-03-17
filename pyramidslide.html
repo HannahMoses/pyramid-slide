@@ -6,21 +6,22 @@
 </head>
 <body>
     <h1>Pyramid Slide</h1>
-    <div id="symbol">
+    <div >
         Brick Symbol :
-        <select>
+        <select id="symbol" onchange="printPyramid()">
             <option value="hash">#</option>
             <option value="at">@</option>
             <option value="cross">X</option>
             <option value="dollar">$</option>
         </select>
     </div>
+
 <p>
     <div id="slider">
         How high?
 
 
-        <input type="range" oninput="printPyramid(this.value)"><div id="value"></div>
+        <input type="range" oninput="printPyramid()" id="height"><div id="value"></div>
         <pre id="buildPyramid">
 
 

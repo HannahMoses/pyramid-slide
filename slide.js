@@ -6,21 +6,26 @@ function slideFunction(value){
 
 }
 
-function printPyramid(height) {
+function printPyramid() {
+    var height = document.getElementById("height").value;
     var count = 0
     var spaces = height - 1
     var hashes = 2
     var str    = ""
     var pyram = ""
 
-    document.getElementById("value").innerHTML = height;
-
+    // this grabs the height from html document
+    var select = document.getElementById("symbol");
+    var symb = select.options[select.selectedIndex].text;
+    // element.onchange = handlerFunction;
     while (count<height){
-        for(var number = spaces;  number>= 0;number--)
+        for(var number = spaces;  number>= 0;number--){
 //        for(var number= 0;number <= spaces; number++)
             str = str + " ";
-        for (var number = 0; number<hashes; number++)
-        str =str + "#";
+        }
+        for (var number = 0; number<hashes; number++){
+            str =str + symb;
+        }
         pyram = pyram+"<br>"+str;
 //       console.log(str)
 
